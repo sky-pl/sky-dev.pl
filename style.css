@@ -1,0 +1,265 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 1.6;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        header {
+            padding: 120px 20px 20px;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .menu-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .menu-container a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        .menu-container a:hover {
+            color: #2770B9;
+        }
+        .section {
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            background: gray;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .about-content {
+            flex: 1;
+            text-align: left;
+        }
+
+		.gallery {
+			display: flex;
+			justify-content: space-around; /* Zapewni równomierne rozmieszczenie */
+			flex-wrap: wrap;
+			gap: 30px; /* Większa przerwa między kartami */
+			width: 90%; /* Poszerzenie galerii */
+		margin: 0 auto;
+		}
+
+.section {
+    width: 90%; /* Poszerzenie sekcji */
+    max-width: 1200px; /* Zapobiega zbyt dużemu rozciągnięciu na szerokich ekranach */
+	
+}
+
+.card {
+    flex: 1; /* Karty będą się dostosowywać */
+    min-width: 300px; /* Minimalna szerokość karty */
+    max-width: 500px; /* Maksymalna szerokość karty */
+}
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        }
+        .code-animation {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            background: black;
+            color: limegreen;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 90%;
+            margin: 0 auto;
+            animation: typing 4s steps(40) infinite alternate;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 90%; }
+        }
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+		.menu-container a.active {
+    color: #2770B9;
+    font-weight: bold;
+}
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.social-icons .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;  
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1); /* Dopasowanie do tła sekcji */
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.social-icons .card:hover {
+    background: rgba(255, 255, 255, 0.2); /* Lekko jaśniejsze tło przy najechaniu */
+}
+
+.title-link {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: inherit; /* Dziedziczenie koloru tekstu */
+    transition: color 0.3s ease-in-out;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.about-container {
+    display: flex;
+    align-items: center; /* Wyrównanie w pionie */
+    gap: 20px; /* Odstęp między zdjęciem a tekstem */
+}
+
+.avatar {
+    width: 150px; /* Dopasuj szerokość według potrzeb */
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-content {
+    flex: 1; /* Zajmuje resztę dostępnego miejsca */
+}
+
+.no-bullets {
+    list-style: none;
+    padding: 0;
+}
+
+.no-bullets li {
+    display: flex;
+    align-items: flex-start;
+}
+
+.no-bullets li::before {
+    content: attr(data-icon);
+    margin-right: 8px;
+}
+.social-icons {
+        display: flex;
+		  opacity: 1;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: nowrap; /* Ensure all buttons stay in one line */
+    }
+
+    .social-icons .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 23%;  /* Set width to 25% of the parent container */
+        padding: 10px 20px;
+        background-color: #484848;
+        color: white;
+        border-radius: 25px;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-sizing: border-box; /* Ensure padding does not affect the width */
+    }
+
+    .social-icons .card i {
+        margin-right: 8px;
+    }
+
+    .social-icons .card:hover {
+        background-color: #2770B9; /* Change the color on hover */    }
+
+    .social-icons .card:active {
+        transform: scale(1);
+    }
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.discord-widget {
+    flex-shrink: 0;
+}
+
+.button {
+    display: block;
+    background-color: #d4a373;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #a06c45;
+}
+a {
+    color: inherit; /* Sprawia, że link przyjmuje kolor tekstu */
+    text-decoration: none; /* Opcjonalnie, aby usunąć podkreślenie */
+}
